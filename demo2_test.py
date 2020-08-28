@@ -40,22 +40,14 @@ for row in matches:
             time = re.search(pattern, el)
             items["time"] = time.group()
         elif 'participant--home' in el:
-            pattern = r'\"\>(.+\(|\<\/[d]|.+\<)'
+            pattern = r'\"\>(.{1,})\/'
             home_search = re.search(pattern, el)
-            home_team = ''
-            if home_search.group()[-1] == '(':
-                home_team = home_search.group()[2:-2]
-            else:
-                home_team = home_search.group()[2:-1]
+            home_team = home_search.group()[:-1]
             items["home_team"] = home_team
         elif 'participant--away' in el:
-            pattern = r'\"\>(.+\(|.+\<)'
+            pattern = r'\"\>(.{1,})\/'
             away_search = re.search(pattern, el)
-            away_team = ''
-            if away_search.group()[-1] == '(':
-                away_team = away_search.group()[2:-2]
-            else:
-                away_team = away_search.groups()[2:-1]
+            away_team = away_search.group()[:-1]
             items["away_team"] = away_team
         elif '<span alt=' in el:
             old_odd_pattern = r"\=\"(\d+\.\d+)\["
