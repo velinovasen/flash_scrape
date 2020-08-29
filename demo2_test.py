@@ -32,8 +32,8 @@ matches = soup.find_all(class_=re.compile("event__match"))
 for row in matches:
     token = str(row)
     tokens = token.split('div ')
-    items = {"time": None, "home_team": None, "away_team": None, "home_odd": {"old": None, "new": None},
-             "draw_odd": {"old": None, "new": None}, "away_odd": {"old": None, "new": None}}
+    items = {"time": None, "home_team": None, "away_team": None, "home_odd": None,
+             "draw_odd": None, "away_odd": None}
     for el in tokens:
         if 'class="event__time' in el:
             pattern = r'\d+[:]\d{2}'
@@ -42,43 +42,30 @@ for row in matches:
         elif 'participant--home' in el:
             pattern = r'\"\>(.{1,})\/'
             home_search = re.search(pattern, el)
-            home_team = home_search.group()[:-1]
+            home_team = home_search.group()[2:-2]
             items["home_team"] = home_team
         elif 'participant--away' in el:
             pattern = r'\"\>(.{1,})\/'
             away_search = re.search(pattern, el)
-            away_team = away_search.group()[:-1]
+            away_team = away_search.group()[2:-2]
             items["away_team"] = away_team
         elif '<span alt=' in el:
-            old_odd_pattern = r"\=\"(\d+\.\d+)\["
-            new_odd_pattern = r"\"\>(\d+\.\d+)\<"
-            old_odd_search = re.search(old_odd_pattern, el)
-            new_odd_search = re.search(new_odd_pattern, el)
-    print(tokens)
+            odd_pattern = r"\"\>(\d+\.\d+)\<"
+            odd_search = re.search(odd_pattern, el)
+            if len(tokens) - tokens.index(el) == 2:
+                odd = odd_search.group()[2:-1]
+                items["home_odd"] = odd
+            elif len(tokens) - tokens.index(el) == 1:
+                odd = odd_search.group()[2:-1]
+                items["draw_odd"] = odd
+            else:
+                odd = odd_search.group()[2:-1]
+                items["away_odd"] = odd
+
+    #print(tokens)
 
     result_to_print = f""
     for key, value in items.items():
         result_to_print += f"---[{key}---{value}]---"
     print(result_to_print)
 print(len(matches))
-
-# if len(tokens) == 6:
-#     if tokens.index(el) == 4:
-#         items["home_odd"]["old"] = old_odd_search.group()
-#         items["home_odd"]["new"] = new_odd_search.group()
-#     elif tokens.index(el) == 5:
-#         items["draw_odd"]["old"] = old_odd_search.group()
-#         items["draw_odd"]["new"] = new_odd_search.group()
-#     elif tokens.index(el) == 6:
-#         items["away_odd"]["old"] = old_odd_search.group()
-#         items["away_odd"]["new"] = new_odd_search.group()
-# elif len(tokens) == 5:
-#     if tokens.index(el) == 3:
-#         items["home_odd"]["old"] = old_odd_search.group()
-#         items["home_odd"]["new"] = new_odd_search.group()
-#     elif tokens.index(el) == 4:
-#         items["draw_odd"]["old"] = old_odd_search.group()
-#         items["draw_odd"]["new"] = new_odd_search.group()
-#     elif tokens.index(el) == 5:
-#         items["away_odd"]["old"] = old_odd_search.group()
-#         items["away_odd"]["new"] = new_odd_search.group()
