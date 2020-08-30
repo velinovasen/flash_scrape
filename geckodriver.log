@@ -10,8 +10,10 @@ TimedPromise/<@chrome://marionette/content/sync.js:245:13
 TimedPromise@chrome://marionette/content/sync.js:230:10
 interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
 webdriverClickElement@chrome://marionette/content/interaction.js:182:31
-1598702183017	geckodriver	INFO	Listening on 127.0.0.1:50045
-1598702186068	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Asen\\AppData\\Local\\Temp\\rust_mozprofile86gbKG"
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 6748, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1598710367011	Marionette	INFO	Stopped listening on port 49943
+st_mozprofile86gbKG"
 *** You are running in headless mode.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
@@ -20,8 +22,10 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
 JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
-1598702462013	geckodriver	INFO	Listening on 127.0.0.1:50123
-1598702465074	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Asen\\AppData\\Local\\Temp\\rust_mozprofilekEfHpB"
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 10852, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1598710366103	Marionette	INFO	Stopped listening on port 50053
+t_mozprofilekEfHpB"
 *** You are running in headless mode.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
@@ -30,15 +34,19 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
 JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
-1598702552681	geckodriver	INFO	Listening on 127.0.0.1:50205
-1598702555756	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Asen\\AppData\\Local\\Temp\\rust_mozprofileU7NgkH"
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 11476, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1598710378547	Marionette	INFO	Stopped listening on port 50131
+t_mozprofileU7NgkH"
 *** You are running in headless mode.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
 1598702558817	Marionette	INFO	Listening on port 50213
 1598702558870	Marionette	WARN	TLS certificate errors will be ignored for this session
-1598706283134	geckodriver	INFO	Listening on 127.0.0.1:50714
-1598706286259	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Asen\\AppData\\Local\\Temp\\rust_mozprofileNXNUX5"
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 11876, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1598710446067	Marionette	INFO	Stopped listening on port 50213
+t_mozprofileNXNUX5"
 *** You are running in headless mode.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
@@ -57,8 +65,10 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
 JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
-1598706384452	geckodriver	INFO	Listening on 127.0.0.1:50873
-1598706387659	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Asen\\AppData\\Local\\Temp\\rust_mozprofileLIbAN0"
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 16028, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1598710384252	Marionette	INFO	Stopped listening on port 50801
+t_mozprofileLIbAN0"
 *** You are running in headless mode.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
@@ -73,8 +83,10 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 1598706456483	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript error: https://www.flashscore.com/x/js/core_2_1848000000.js, line 5803: Error: Item g_1_I9Qb0kjR not found
 JavaScript error: https://www.flashscore.com/x/js/core_2_1848000000.js, line 5803: Error: Item g_1_lWi4AcRL not found
-1598706529773	geckodriver	INFO	Listening on 127.0.0.1:51023
-1598706532851	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Asen\\AppData\\Local\\Temp\\rust_mozprofiletWnJ2V"
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 16116, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1598710372832	Marionette	INFO	Stopped listening on port 50956
+t_mozprofiletWnJ2V"
 *** You are running in headless mode.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
@@ -85,8 +97,10 @@ JavaScript error: https://www.flashscore.com/x/js/core_2_1848000000.js, line 580
 JavaScript error: https://www.flashscore.com/x/js/core_2_1848000000.js, line 5803: Error: Item g_1_CKaJVZ2I not found
 JavaScript error: https://www.flashscore.com/x/js/core_2_1848000000.js, line 5803: Error: Item g_1_ddoWRU80 not found
 JavaScript error: https://www.flashscore.com/x/js/core_2_1848000000.js, line 5803: Error: Item g_1_CKaJVZ2I not found
-1598706818230	geckodriver	INFO	Listening on 127.0.0.1:51117
-1598706821313	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Asen\\AppData\\Local\\Temp\\rust_mozprofile3WTGFJ"
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 15424, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1598710447287	Marionette	INFO	Stopped listening on port 51031
+t_mozprofile3WTGFJ"
 *** You are running in headless mode.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
@@ -96,8 +110,10 @@ JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: WebGL warning: <C
 JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
 JavaScript error: https://www.flashscore.com/x/js/core_2_1848000000.js, line 5803: Error: Item g_1_jaC0JoYp not found
-1598707027244	geckodriver	INFO	Listening on 127.0.0.1:51218
-1598707030370	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Asen\\AppData\\Local\\Temp\\rust_mozprofileZ2P9GG"
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 16856, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1598710391455	Marionette	INFO	Stopped listening on port 51125
+t_mozprofileZ2P9GG"
 *** You are running in headless mode.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
@@ -106,7 +122,8 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
 JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
-1598707261082	geckodriver	INFO	Listening on 127.0.0.1:51309
+Exiting due to channel error.
+Listening on 127.0.0.1:51309
 1598707264172	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Asen\\AppData\\Local\\Temp\\rust_mozprofileQrAxA1"
 *** You are running in headless mode.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
@@ -116,8 +133,10 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
 JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: Failed to create WebGL context: WebGL creation failed: 
 * Can't use WebGL in headless mode (https://bugzil.la/1375585).
-1598707476386	geckodriver	INFO	Listening on 127.0.0.1:51394
-1598707479415	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Asen\\AppData\\Local\\Temp\\rust_mozprofileFxhbrP"
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 17992, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1598710441940	Marionette	INFO	Stopped listening on port 51317
+t_mozprofileFxhbrP"
 *** You are running in headless mode.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
@@ -153,3 +172,44 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
 1598708648905	Marionette	INFO	Listening on port 51943
 1598708649361	Marionette	WARN	TLS certificate errors will be ignored for this session
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 21264, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1598710451899	Marionette	INFO	Stopped listening on port 51943
+t_mozprofilemETLBD"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598708896533	Marionette	INFO	Listening on port 52028
+1598708896618	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://www.flashscore.com/x/js/core_2_1848000000.js, line 5803: Error: Item g_1_4Ou5462c not found
+JavaScript error: https://www.flashscore.com/x/js/core_2_1848000000.js, line 5803: Error: Item g_1_tI2m69RC not found
+JavaScript error: https://www.flashscore.com/x/js/core_2_1848000000.js, line 5803: Error: Item g_1_hIHjeiwk not found
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39013A,name=PContent::Msg_AsyncMessage) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[Parent 13636, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+1598710445195	Marionette	INFO	Stopped listening on port 52028
+1598757062493	geckodriver	INFO	Listening on 127.0.0.1:65408
+1598757065586	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Asen\\AppData\\Local\\Temp\\rust_mozprofileO86lCU"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598757074492	Marionette	INFO	Listening on port 65416
+1598757074538	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1598773261483	geckodriver	INFO	Listening on 127.0.0.1:50318
+1598773264555	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Asen\\AppData\\Local\\Temp\\rust_mozprofiledEYNsT"
+*** You are running in headless mode.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598773267568	Marionette	INFO	Listening on port 50326
+1598773267680	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://cdn.ftd.agency/libs/e.js, line 46: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).

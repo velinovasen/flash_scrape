@@ -8,9 +8,9 @@ from selenium.webdriver import Firefox
 from selenium.webdriver.firefox.options import Options
 
 WEB_LINKS = {
-        "Football": "https://www.flashscore.com/football/",
-        "Tennis": "https://www.flashscore.com/tennis/"
-    }
+    "Football": "https://www.flashscore.com/football/",
+    "Tennis": "https://www.flashscore.com/tennis/"
+}
 
 all_data = []
 
@@ -18,7 +18,7 @@ conn = sqlite3.connect('test_bin.db')
 c = conn.cursor()
 c.execute('DROP TABLE IF EXISTS allGames')
 c.execute('CREATE TABLE allGames(time TEXT, home_team TEXT, '
-              'away_team TEXT, home_odd REAL, draw_odd REAL, away_odd REAL)')
+          'away_team TEXT, home_odd REAL, draw_odd REAL, away_odd REAL)')
 
 options = Options()
 options.headless = True
@@ -77,17 +77,17 @@ for row in matches:
             odd_search = re.search(odd_pattern, el)
             if len(tokens) - tokens.index(el) == 2:
                 odd = odd_search.group()[2:-1]
-                items["home_odd"] = odd
+                items["draw_odd"] = odd
             elif len(tokens) - tokens.index(el) == 1:
                 odd = odd_search.group()[2:-1]
-                items["draw_odd"] = odd
-            else:
-                odd = odd_search.group()[2:-1]
                 items["away_odd"] = odd
+            elif len(tokens) - tokens.index(el) == 3:
+                odd = odd_search.group()[2:-1]
+                items["home_odd"] = odd
 
     c.execute('INSERT INTO allGames (time, home_team, away_team, home_odd, draw_odd, away_odd)'
-                   ' VALUES (?, ?, ?, ?, ?, ?)', (items["time"], items["home_team"], items["away_team"],
-                                                  items["home_odd"], items["draw_odd"], items["away_odd"]))
+              ' VALUES (?, ?, ?, ?, ?, ?)', (items["time"], items["home_team"], items["away_team"],
+                                             items["home_odd"], items["draw_odd"], items["away_odd"]))
     conn.commit()
 
     # print(tokens)
